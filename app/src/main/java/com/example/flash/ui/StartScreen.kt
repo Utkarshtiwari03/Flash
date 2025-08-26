@@ -9,6 +9,7 @@ import com.example.flash.R
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
@@ -78,7 +79,7 @@ fun ComponentScreen(modifier: Modifier = Modifier,name: Int,image: Int,context: 
             )
             Image(painter = painterResource(id = image),
                 contentDescription = "Image",
-                modifier = Modifier.size(150.dp))
+                modifier = Modifier.fillMaxWidth().padding(8.dp),)
         }
     }
 }

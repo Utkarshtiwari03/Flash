@@ -47,6 +47,7 @@ fun ItemScreen(modifier: Modifier = Modifier, flashViewModel: FlashViewModel) {
     val flashUiState by flashViewModel.uiState.collectAsState()
 //    Text(text = flashUiState.selectedCategory)
     LazyVerticalGrid(
+        modifier = modifier,
         columns = GridCells.Adaptive(128.dp),
         contentPadding = PaddingValues(10.dp),
         verticalArrangement = Arrangement.spacedBy(5.dp),
