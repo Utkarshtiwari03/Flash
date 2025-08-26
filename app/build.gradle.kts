@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.example.flash"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.flash"
@@ -56,4 +56,8 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.9.2")
+//    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.x.x")
+    val nav_version = "2.9.3" // Replace with the latest stable version
+    implementation("androidx.navigation:navigation-compose:$nav_version")
 }
